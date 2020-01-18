@@ -34,7 +34,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set tabstop=4
-set rtp=C:\\Program\ Files\ (x86)\\Vim/vimfiles,C:\\Program\ Files\ (x86)\\Vim\\vim73,C:\\Program\ Files\ (x86)\\Vim/vimfiles/after,C:\\Program\ Files\ (x86)\\Vim\\vim74
+set rtp=C:\\Program\ Files\ (x86)\\Vim/vimfiles,C:\\Program\ Files\ (x86)\\Vim\\vim82,C:\\Program\ Files\ (x86)\\Vim/vimfiles/after
 set backupdir=C:\\temp\\swp,C:\\temp
 set dir=C:\\temp\\swp,C:\\temp
 set tildeop
@@ -54,8 +54,10 @@ au BufNewFile,BufRead *.less set filetype=css
 
 "cp will copy the current file name into the unnamed register which can be pasted with p
 :nmap cp :let @" = expand("%")
+
 " ,n will copy the current line number into the clipboard
 map ,n <Esc>:let @*=line(".")<CR>
+
 "Move between windows and maximise 
 "map <C-J> <C-W>j<C-W>_
 "map <C-K> <C-W>k<C-W>_
